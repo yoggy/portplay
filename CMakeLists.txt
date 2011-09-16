@@ -14,3 +14,4 @@ endif()
 add_executable(portplay portplay.c)
 target_link_libraries(portplay portaudio)
 
+INSTALL(TARGETS portplay RUNTIME DESTINATION bin)
