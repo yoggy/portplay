@@ -1,0 +1,19 @@
+= About
+portplay is wav file player using portaudio library.
+(now Mac OS X only...)
+
+= compile
+ $ cmake .
+ $ make
+
+= how to use
+ $ ./portplay 
+ usage: ./portplay devide_id wav_file
+
+   device_id list (Pa_GetDeviceInfo() result)
+     0: Built-in Microphone
+     1: Built-in Input
+     2: Built-in Output
+     3: UA-1EX
+ 
+ $ ./portplay 2 ./path/to/example.wav
